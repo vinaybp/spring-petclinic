@@ -1,4 +1,4 @@
-INSERT IGNORE INTO vets VALUES (1, 'Vinay', 'BP');
+INSERT IGNORE INTO vets VALUES (1, 'Argha', 'DAS');
 INSERT IGNORE INTO vets VALUES (2, 'Argo', 'Leary');
 INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas');
 INSERT IGNORE INTO vets VALUES (4, 'Rafael', 'Ortega');
