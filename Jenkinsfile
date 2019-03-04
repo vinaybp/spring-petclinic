@@ -20,7 +20,7 @@ pipeline {
    
    stage ('Deploy') {
   steps {
-    sh 'nohup java -jar -Dserver.port=8083 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar &#038'
+    sh 'nohup java -jar -Xms256M -Xmx512M -Dserver.port=8083 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar &#038'
     }
     }
 
