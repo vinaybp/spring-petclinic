@@ -12,19 +12,20 @@ pipeline {
     }
  
 
-   stage ('Deploy') {
-  steps {
-    sh 'java -jar -Dserver.port=8083 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
-    }
-    }
-
-   
-    
-     stage('Test') {
+    stage('Test') {
             steps {
                 sh 'mvn test'
             }
      }
+   
+   stage ('Deploy') {
+  steps {
+    sh 'nohup java -jar -Dserver.port=8083 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
+    }
+    }
+
+     
+    
        stage('Upload'){
          steps {
            
