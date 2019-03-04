@@ -1,4 +1,4 @@
-INSERT INTO vets VALUES (1, 'Vinay', 'Bp');
+INSERT INTO vets VALUES (1, 'Aargh', 'DAS');
 INSERT INTO vets VALUES (2, 'Helen', 'Leary');
 INSERT INTO vets VALUES (3, 'Linda', 'Douglas');
 INSERT INTO vets VALUES (4, 'Rafael', 'Ortega');
