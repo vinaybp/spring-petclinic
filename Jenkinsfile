@@ -14,7 +14,7 @@ pipeline {
 
    stage ('Deploy') {
   steps {
-    sh 'java -jar target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
+    sh 'java -jar -Dserver.port=8083 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
     }
     }
 
