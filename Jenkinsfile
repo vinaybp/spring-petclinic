@@ -14,7 +14,7 @@ pipeline {
 
    stage ('Deploy') {
   steps {
-    sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
+    sh 'java -jar target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
     }
     }
 
@@ -28,7 +28,7 @@ pipeline {
        stage('Upload'){
          steps {
            
-            sh 'curl -X PUT -u admin:5r5h7sb5w -T target/my-app-1.0-SNAPSHOT.jar "http://13.71.125.61:8081/artifactory/example-repo-local/my-app-1.0-SNAPSHOT.jar"'
+            sh 'curl -X PUT -u admin:5r5h7sb5w -T target/my-app-1.0-SNAPSHOT.jar "http://13.71.125.61:8081/artifactory/example-repo-local/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar"'
          }
        }
         
